@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../image/hinhnen.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.inFor {
+  display: flex;
+  align-items: flex-end;
+}
+.icon {
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+#login,
+#signUp {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.form_login,
+.form_signUp {
+  width: 464px;
+  border-radius: 10px;
+  height: auto;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+.animate {
+  -webkit-animation: animatezoom 0.3s;
+  animation: animatezoom 0.3s;
+}
+.input {
+  outline: none;
+  outline-color: rgba(0, 0, 0, 0);
+  width: 400px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 12px 10px;
+  margin: 8px 0;
+  /* border-bottom: 3px solid lightgray; */
+  color: white;
+}
+
+.input:focus {
+  /* border:1px solid black; */
+}
+
+.text_login,
+.text_signUp {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+hr {
+  border: 1.5px solid #ffffff;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+.link_other a {
+  text-decoration: none;
+}
+.link_other {
+  display: flex;
+  justify-content: space-between;
+}
+.fb,
+.twitter,
+.google {
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fb {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.google {
+  background-color: #dd4b39;
+}
+.btn_sign {
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 121, 72);
+  cursor: pointer;
+}
+.btn_Login {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 15px 0;
+  background-color: #04aa6d;
+  cursor: pointer;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+/* @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  } */
+.fb:hover,
+.twitter:hover,
+.google:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+.btnSignUp,
+.btnCancel {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.btnSignUp {
+  background-color: #04aa6d;
+}
+.btnCancel {
+  background-color: #dd4b39;
+}
